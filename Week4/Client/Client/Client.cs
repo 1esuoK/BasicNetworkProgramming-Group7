@@ -38,13 +38,12 @@ namespace TCPChatServerClients
                 }
                 svport = Int32.Parse(txtPort.Text);
                 svAddr = IPAddress.Parse(txtAddress.Text);
-                name = txtUserID.Text;
+                //name = txtUserID.Text;
 
                 
                 client = new TcpClient();
                 client.Connect(svAddr, svport);
-                
-                NetworkStream stream = client.GetStream();
+              
 
 
                 Thread rev = new Thread(Receive);
@@ -62,19 +61,23 @@ namespace TCPChatServerClients
 
         private void Receive()
         {
+            byte[] ResponseData = new byte[256];
+            String Responsemes = String.Empty;
             NetworkStream stream = client.GetStream();
-            byte[] data = new byte[256];
-            int bytes = stream.Read(data, 0, data.Length);
-            string responseData = Encoding.UTF8.GetString(data, 0, bytes);
-            lstMess.Items.Add(name + responseData);
-
+            int i;
+            while ((i = stream.Read(ResponseData, 0, ResponseData.Length)) != 0)
+            {
+                Responsemes = System.Text.Encoding.ASCII.GetString(ResponseData, 0, i);
+                lstMess.Items.Add(Responsemes);
+            }
         }
 
         private void sendBtn_Click(object sender, EventArgs e)
         {
             byte[] data = System.Text.Encoding.UTF8.GetBytes(txtSend.Text);
             NetworkStream stream = client.GetStream();
-            stream.Write(data, 0, data.Length);
+            stream.Write(data,0, data.Length);
+            
             txtSend.Clear();
         }
 
