@@ -76,6 +76,14 @@ namespace TCPChatServerClients
             NetworkStream stream = client.GetStream();
             stream.Write(data, 0, data.Length);
             txtSend.Clear();
-        }  
+        }
+
+        private void clrBtn_Click(object sender, EventArgs e)
+        {
+            txtAddress.Clear();
+            txtPort.Clear();
+            txtSend.Clear();
+            txtUserID.Clear();
+        }
     }
 }

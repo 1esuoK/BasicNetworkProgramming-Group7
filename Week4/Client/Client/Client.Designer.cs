@@ -48,7 +48,6 @@
             this.txtSend.Name = "txtSend";
             this.txtSend.Size = new System.Drawing.Size(704, 38);
             this.txtSend.TabIndex = 0;
-            
             // 
             // sendBtn
             // 
@@ -135,6 +134,7 @@
             this.clrBtn.TabIndex = 9;
             this.clrBtn.Text = "Clear";
             this.clrBtn.UseVisualStyleBackColor = true;
+            this.clrBtn.Click += new System.EventHandler(this.clrBtn_Click);
             // 
             // lstMess
             // 
@@ -163,7 +163,6 @@
             this.Controls.Add(this.txtSend);
             this.Name = "Client";
             this.Text = "Form1";
-            
             this.ResumeLayout(false);
             this.PerformLayout();
 
