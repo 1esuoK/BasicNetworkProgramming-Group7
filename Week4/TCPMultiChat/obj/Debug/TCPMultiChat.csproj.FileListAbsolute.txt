@@ -1,0 +1,12 @@
+C:\Users\chitu\source\repos\TCPMultiChat\bin\Debug\TCPMultiChat.exe.config
+C:\Users\chitu\source\repos\TCPMultiChat\bin\Debug\TCPMultiChat.exe
+C:\Users\chitu\source\repos\TCPMultiChat\bin\Debug\TCPMultiChat.pdb
+C:\Users\chitu\source\repos\TCPMultiChat\obj\Debug\TCPMultiChat.csproj.AssemblyReference.cache
+C:\Users\chitu\source\repos\TCPMultiChat\obj\Debug\TCPMultiChat.csproj.SuggestedBindingRedirects.cache
+C:\Users\chitu\source\repos\TCPMultiChat\obj\Debug\TCPMultiChat.Form1.resources
+C:\Users\chitu\source\repos\TCPMultiChat\obj\Debug\TCPMultiChat.Properties.Resources.resources
+C:\Users\chitu\source\repos\TCPMultiChat\obj\Debug\TCPMultiChat.Server.resources
+C:\Users\chitu\source\repos\TCPMultiChat\obj\Debug\TCPMultiChat.csproj.GenerateResource.cache
+C:\Users\chitu\source\repos\TCPMultiChat\obj\Debug\TCPMultiChat.csproj.CoreCompileInputs.cache
+C:\Users\chitu\source\repos\TCPMultiChat\obj\Debug\TCPMultiChat.exe
+C:\Users\chitu\source\repos\TCPMultiChat\obj\Debug\TCPMultiChat.pdb
