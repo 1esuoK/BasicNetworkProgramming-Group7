@@ -32,20 +32,29 @@ namespace TCPMultiChat
                 IPAddress ipAddress = IPAddress.Parse(txt_ip.Text);
                 int port = int.Parse(txt_port.Text);
                 server = new TcpListener(ipAddress, port);
-                server.Start();
                 clientList = new Dictionary<int, TcpClient>();
-                Thread listenThread = new Thread(() =>
+                Thread listen = new Thread(() =>
                 {
-                    while (true)
+                    server.Start();
+                    txt_messages.Text += "Server đã khởi động !";
+                    Thread newClient = new Thread(() =>
                     {
-                        TcpClient client = server.AcceptTcpClient();
-                        Thread clientThread = new Thread(() => HandleClient(client));
-                        clientThread.IsBackground = true;
-                        clientThread.Start();
-                    }
+                        int index = 0;
+                        while (true)
+                        {
+                            TcpClient client = server.AcceptTcpClient();
+                            index += 1;
+                            clientList.Add(index, client);
+                            Thread receive = new Thread(HandleClient);
+                            receive.IsBackground = true;
+                            receive.Start(index);
+                        }
+                    });
+                    newClient.Start();
                 });
-                listenThread.IsBackground = true;
-                listenThread.Start();
+                listen.IsBackground = true;
+                listen.Start();
+                
             }
             catch
             {
@@ -53,44 +62,32 @@ namespace TCPMultiChat
             }
         }
 
-        void HandleClient(TcpClient client)
+        void HandleClient(object obj)
         {
-            int clientId = Thread.CurrentThread.ManagedThreadId;
-            clientList.Add(clientId, client);
+            int index = (int)obj;
+            byte[] Data = new byte[256];
+            TcpClient client = clientList[index];
+            String Mes = null;
             NetworkStream stream = client.GetStream();
-            byte[] data = new byte[256];
-            string clientName = txt_name.Text;
             int i;
-
-            while ((i = stream.Read(data, 0, data.Length)) != 0)
+            string ResponseMes = "";
+            CheckForIllegalCrossThreadCalls = false;
+            while ((i = stream.Read(Data, 0, Data.Length)) != 0)
             {
-                string message = System.Text.Encoding.UTF8.GetString(data, 0, i);
-
-                if (clientName == null)
-                {
-                    clientName = message.Trim();
-                    string welcomeMessage = $"Welcome, {clientName}!\r\n";
-                    byte[] welcomeData = System.Text.Encoding.UTF8.GetBytes(welcomeMessage);
-                    stream.Write(welcomeData, 0, welcomeData.Length);
-                }
-                else
-                {
-                    string responseMessage = $"{clientName}: {message}";
-                    byte[] responseData = System.Text.Encoding.UTF8.GetBytes(responseMessage);
-                    SendToAllClients(responseData);
-                }
+                Mes = System.Text.Encoding.ASCII.GetString(Data, 0, i);
+                txt_messages.Text += "Client: " + index + ": " + Mes + "\r\n";
+                ResponseMes = "Client" + index + ": " + Mes + "\r\n";
+                BroadCast(ResponseMes);
             }
-
-            clientList.Remove(clientId);
-            client.Close();
         }
 
-        void SendToAllClients(byte[] data)
+        void BroadCast(string ResponseMes)
         {
-            foreach (TcpClient client in clientList.Values)
+            byte[] ResponseData = System.Text.Encoding.ASCII.GetBytes(ResponseMes);
+            foreach (TcpClient Client in clientList.Values)
             {
-                NetworkStream stream = client.GetStream();
-                stream.Write(data, 0, data.Length);
+                NetworkStream Stream = Client.GetStream();
+                Stream.Write(ResponseData, 0, ResponseData.Length);
             }
         }
 
