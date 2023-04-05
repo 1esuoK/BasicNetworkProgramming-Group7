@@ -39,15 +39,15 @@ namespace TCPMultiChat
                     txt_messages.Text += "Server đã khởi động !";
                     Thread newClient = new Thread(() =>
                     {
-                        int index = 0;
+                        int id = 0;
                         while (true)
                         {
                             TcpClient client = server.AcceptTcpClient();
-                            index += 1;
-                            clientList.Add(index, client);
+                            id++;
+                            clientList.Add(id, client);
                             Thread receive = new Thread(HandleClient);
                             receive.IsBackground = true;
-                            receive.Start(index);
+                            receive.Start(id);
                         }
                     });
                     newClient.Start();
@@ -64,26 +64,26 @@ namespace TCPMultiChat
 
         void HandleClient(object obj)
         {
-            int index = (int)obj;
+            int id = (int)obj;
             byte[] Data = new byte[256];
-            TcpClient client = clientList[index];
-            String Mes = null;
+            TcpClient client = clientList[id];
+            String Mess = null;
             NetworkStream stream = client.GetStream();
             int i;
-            string ResponseMes = "";
+            string ResponseMessage = "";
             CheckForIllegalCrossThreadCalls = false;
             while ((i = stream.Read(Data, 0, Data.Length)) != 0)
             {
-                Mes = System.Text.Encoding.ASCII.GetString(Data, 0, i);
-                txt_messages.Text += "Client: " + index + ": " + Mes + "\r\n";
-                ResponseMes = "Client" + index + ": " + Mes + "\r\n";
-                BroadCast(ResponseMes);
+                Mess = System.Text.Encoding.UTF8.GetString(Data, 0, i);
+                txt_messages.Text += "Client: " + id + ": " + Mess + "\r\n";
+                ResponseMessage = "Client" + id + ": " + Mess+ "\r\n";
+                BroadCast(ResponseMessage);
             }
         }
 
-        void BroadCast(string ResponseMes)
+        void BroadCast(string ResponseMessages)
         {
-            byte[] ResponseData = System.Text.Encoding.ASCII.GetBytes(ResponseMes);
+            byte[] ResponseData = System.Text.Encoding.UTF8.GetBytes(ResponseMessages);
             foreach (TcpClient Client in clientList.Values)
             {
                 NetworkStream Stream = Client.GetStream();

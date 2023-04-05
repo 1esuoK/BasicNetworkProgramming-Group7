@@ -23,3 +23,16 @@ C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-G
 C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.csproj.CoreCompileInputs.cache
 C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.exe
 C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.pdb
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\bin\Debug\TCPMultiChat.exe.config
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\bin\Debug\TCPMultiChat.exe
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\bin\Debug\TCPMultiChat.pdb
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.csproj.AssemblyReference.cache
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.csproj.SuggestedBindingRedirects.cache
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.Client.resources
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.Form1.resources
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.Properties.Resources.resources
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.Server.resources
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.csproj.GenerateResource.cache
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.csproj.CoreCompileInputs.cache
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.exe
+D:\LearningSpace\HK4\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\TCPMultiChat\obj\Debug\TCPMultiChat.pdb
