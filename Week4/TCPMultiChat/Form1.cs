@@ -22,5 +22,11 @@ namespace TCPMultiChat
             Server sv = new Server();
             sv.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Client cl = new Client();
+            cl.Show();
+        }
     }
 }
