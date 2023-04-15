@@ -76,6 +76,7 @@ namespace ChatTCP
                         addrTextBox.Enabled = false;
                         portTextBox.Enabled = false;
                         usernameTextBox.Enabled = false;
+                        keyTextBox.Enabled = false;
                         startButton.Text = "Stop";
                         Log(SystemMsg("Máy chủ đã khởi động"));
                     }
@@ -84,6 +85,7 @@ namespace ChatTCP
                         addrTextBox.Enabled = true;
                         portTextBox.Enabled = true;
                         usernameTextBox.Enabled = true;
+                        keyTextBox.Enabled = true;
                         startButton.Text = "Start";
                         Log(SystemMsg("Máy chủ đã dừng hoạt động"));
                     }
@@ -198,7 +200,7 @@ namespace ChatTCP
                     {
                         JavaScriptSerializer json = new JavaScriptSerializer();
                         Dictionary<string, string> data = json.Deserialize<Dictionary<string, string>>(obj.data.ToString());
-                        if (!data.ContainsKey("username") || data["username"].Length < 1 )
+                        if (!data.ContainsKey("username") || data["username"].Length < 1 || !data.ContainsKey("key") || !data["key"].Equals(keyTextBox.Text))
                         {
                             obj.client.Close();
                         }

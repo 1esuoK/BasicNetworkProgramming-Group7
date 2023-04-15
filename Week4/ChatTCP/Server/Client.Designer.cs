@@ -41,6 +41,8 @@
             this.portLabel = new System.Windows.Forms.Label();
             this.localaddrLabel = new System.Windows.Forms.Label();
             this.portTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.keyTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btsend
@@ -83,7 +85,7 @@
             this.usernameTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.usernameTextBox.MaxLength = 50;
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(401, 27);
+            this.usernameTextBox.Size = new System.Drawing.Size(180, 27);
             this.usernameTextBox.TabIndex = 52;
             this.usernameTextBox.TabStop = false;
             this.usernameTextBox.Text = "Client";
@@ -104,7 +106,7 @@
             // sendLabel
             // 
             this.sendLabel.AutoSize = true;
-            this.sendLabel.Location = new System.Drawing.Point(20, 475);
+            this.sendLabel.Location = new System.Drawing.Point(20, 466);
             this.sendLabel.Margin = new System.Windows.Forms.Padding(11, 5, 5, 5);
             this.sendLabel.Name = "sendLabel";
             this.sendLabel.Size = new System.Drawing.Size(51, 20);
@@ -113,7 +115,7 @@
             // 
             // sendTextBox
             // 
-            this.sendTextBox.Location = new System.Drawing.Point(14, 496);
+            this.sendTextBox.Location = new System.Drawing.Point(14, 490);
             this.sendTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.sendTextBox.Name = "sendTextBox";
             this.sendTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -190,12 +192,30 @@
             this.portTextBox.Text = "9000";
             this.portTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(485, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 20);
+            this.label1.TabIndex = 59;
+            this.label1.Text = "Key:";
+            // 
+            // keyTextBox
+            // 
+            this.keyTextBox.Location = new System.Drawing.Point(528, 47);
+            this.keyTextBox.Name = "keyTextBox";
+            this.keyTextBox.Size = new System.Drawing.Size(169, 27);
+            this.keyTextBox.TabIndex = 60;
+            // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkCyan;
+            this.BackColor = System.Drawing.Color.PaleVioletRed;
             this.ClientSize = new System.Drawing.Size(713, 531);
+            this.Controls.Add(this.keyTextBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btsend);
             this.Controls.Add(this.addrTextBox);
             this.Controls.Add(this.usernameLabel);
@@ -210,7 +230,7 @@
             this.Controls.Add(this.localaddrLabel);
             this.Controls.Add(this.portTextBox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ForeColor = System.Drawing.Color.ForestGreen;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Client";
             this.Text = "Client";
@@ -234,5 +254,7 @@
         private System.Windows.Forms.Label portLabel;
         private System.Windows.Forms.Label localaddrLabel;
         private System.Windows.Forms.TextBox portTextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox keyTextBox;
     }
 }

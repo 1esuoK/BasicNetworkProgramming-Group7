@@ -24,3 +24,16 @@ D:\Documents\LapTrinhMang\ChatTCP\Server\obj\Debug\ChatTCP.csproj.GenerateResour
 D:\Documents\LapTrinhMang\ChatTCP\Server\obj\Debug\ChatTCP.csproj.CoreCompileInputs.cache
 D:\Documents\LapTrinhMang\ChatTCP\Server\obj\Debug\Server.exe
 D:\Documents\LapTrinhMang\ChatTCP\Server\obj\Debug\Server.pdb
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\obj\Debug\ChatTCP.csproj.AssemblyReference.cache
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\obj\Debug\ChatTCP.csproj.SuggestedBindingRedirects.cache
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\obj\Debug\ChatTCP.Client.resources
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\obj\Debug\ChatTCP.Login.resources
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\obj\Debug\ChatTCP.Server.resources
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\obj\Debug\Server.Properties.Resources.resources
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\obj\Debug\ChatTCP.csproj.GenerateResource.cache
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\obj\Debug\ChatTCP.csproj.CoreCompileInputs.cache
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\obj\Debug\Server.exe
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\obj\Debug\Server.pdb
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\bin\Debug\Server.exe.config
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\bin\Debug\Server.exe
+D:\Documents\LapTrinhMang\BasicNetworkProgramming-Group7\Week4\ChatTCP\Server\bin\Debug\Server.pdb

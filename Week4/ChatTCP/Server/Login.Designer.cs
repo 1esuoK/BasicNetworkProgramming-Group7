@@ -37,7 +37,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(234, 57);
+            this.label1.ForeColor = System.Drawing.Color.Turquoise;
+            this.label1.Location = new System.Drawing.Point(214, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 46);
             this.label1.TabIndex = 0;
@@ -46,6 +47,7 @@
             // butserver
             // 
             this.butserver.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butserver.ForeColor = System.Drawing.Color.BurlyWood;
             this.butserver.Location = new System.Drawing.Point(77, 172);
             this.butserver.Name = "butserver";
             this.butserver.Size = new System.Drawing.Size(210, 77);
@@ -57,6 +59,7 @@
             // butclient
             // 
             this.butclient.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butclient.ForeColor = System.Drawing.Color.Tan;
             this.butclient.Location = new System.Drawing.Point(425, 172);
             this.butclient.Name = "butclient";
             this.butclient.Size = new System.Drawing.Size(223, 77);
@@ -69,7 +72,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.ClientSize = new System.Drawing.Size(723, 327);
             this.Controls.Add(this.butclient);
             this.Controls.Add(this.butserver);

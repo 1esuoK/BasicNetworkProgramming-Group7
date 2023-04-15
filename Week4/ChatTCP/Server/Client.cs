@@ -73,6 +73,7 @@ namespace ChatTCP
                         addrTextBox.Enabled = false;
                         portTextBox.Enabled = false;
                         usernameTextBox.Enabled = false;
+                        keyTextBox.Enabled = false;
                         connectButton.Text = "Disconnect";
                         Log(SystemMsg("Bạn đã kết nối thành công."));
                     }
@@ -81,6 +82,7 @@ namespace ChatTCP
                         addrTextBox.Enabled = true;
                         portTextBox.Enabled = true;
                         usernameTextBox.Enabled = true;
+                        keyTextBox.Enabled = true;
                         connectButton.Text = "Connect";
                         Log(SystemMsg("Bạn đã ngắt kết nối."));
                     }
@@ -186,6 +188,7 @@ namespace ChatTCP
             bool success = false;
             Dictionary<string, string> data = new Dictionary<string, string>();
             data.Add("username", obj.username);
+            data.Add("key", obj.key);
             JavaScriptSerializer json = new JavaScriptSerializer();
             Send(json.Serialize(data));
             while (obj.client.Connected)
@@ -212,12 +215,13 @@ namespace ChatTCP
             return success;
         }
 
-        private void Connection(IPAddress ip, int port, string username)
+        private void Connection(IPAddress ip, int port, string username,string key)
         {
             try
             {
                 obj = new MyClient();
                 obj.username = username;
+                obj.key = key;
                 obj.client = new TcpClient();
                 obj.client.Connect(ip, port);
                 obj.stream = obj.client.GetStream();
@@ -302,7 +306,7 @@ namespace ChatTCP
                 }
                 if (!error)
                 {
-                    client = new Thread(() => Connection(ip, port, username))
+                    client = new Thread(() => Connection(ip, port, username, keyTextBox.Text))
                     {
                         IsBackground = true
                     };
