@@ -12,3 +12,17 @@ D:\Documents\LapTrinhMang\LT_6\LT_6\bin\Debug\Newtonsoft.Json.xml
 D:\Documents\LapTrinhMang\LT_6\LT_6\obj\Debug\LT_6.csproj.CopyComplete
 D:\Documents\LapTrinhMang\LT_6\LT_6\obj\Debug\LT_6.exe
 D:\Documents\LapTrinhMang\LT_6\LT_6\obj\Debug\LT_6.pdb
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\bin\Debug\LT_6.exe.config
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\bin\Debug\LT_6.exe
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\bin\Debug\LT_6.pdb
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\bin\Debug\Newtonsoft.Json.dll
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\bin\Debug\Newtonsoft.Json.xml
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\obj\Debug\LT_6.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\obj\Debug\LT_6.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\obj\Debug\LT_6.Form1.resources
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\obj\Debug\LT_6.Properties.Resources.resources
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\obj\Debug\LT_6.csproj.GenerateResource.cache
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\obj\Debug\LT_6.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\obj\Debug\LT_6.csproj.CopyComplete
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\obj\Debug\LT_6.exe
+C:\Users\HP\OneDrive\Máy tính\UIT-Study\HK4\NT106\C#\BasicNetworkProgramming-Group7\Week6\LT_6\obj\Debug\LT_6.pdb
