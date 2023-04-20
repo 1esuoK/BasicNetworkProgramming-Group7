@@ -14,15 +14,6 @@ namespace LT_6
 {
     public partial class Form1 : Form
     {
-
-        public class Items
-        {
-            public int Id { get; set; }
-            public int UserId { get; set; }
-            public string Title { get; set; }
-            public bool Completed { get; set; }
-        }
-
         private readonly HttpClient _httpClient = new HttpClient();
         private List<Items> users = new List<Items>();
         public Form1()
@@ -45,6 +36,13 @@ namespace LT_6
             {
                 MessageBox.Show($"Error: {ex.Message}");
             }
+        }
+        public class Items
+        {
+            public int Id { get; set; }
+            public int UserId { get; set; }
+            public string Title { get; set; }
+            public bool Completed { get; set; }
         }
     }  
 }
