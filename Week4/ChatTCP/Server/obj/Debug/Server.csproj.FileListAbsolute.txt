@@ -1,0 +1,11 @@
+D:\Downloads\chat-app-master\chat-app-master\src\Server\Server\bin\Debug\Server.exe.config
+D:\Downloads\chat-app-master\chat-app-master\src\Server\Server\bin\Debug\Server.exe
+D:\Downloads\chat-app-master\chat-app-master\src\Server\Server\bin\Debug\Server.pdb
+D:\Downloads\chat-app-master\chat-app-master\src\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+D:\Downloads\chat-app-master\chat-app-master\src\Server\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+D:\Downloads\chat-app-master\chat-app-master\src\Server\Server\obj\Debug\Server.Server.resources
+D:\Downloads\chat-app-master\chat-app-master\src\Server\Server\obj\Debug\Server.Properties.Resources.resources
+D:\Downloads\chat-app-master\chat-app-master\src\Server\Server\obj\Debug\Server.csproj.GenerateResource.cache
+D:\Downloads\chat-app-master\chat-app-master\src\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\Downloads\chat-app-master\chat-app-master\src\Server\Server\obj\Debug\Server.exe
+D:\Downloads\chat-app-master\chat-app-master\src\Server\Server\obj\Debug\Server.pdb
